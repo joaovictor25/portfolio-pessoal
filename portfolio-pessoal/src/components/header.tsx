@@ -1,6 +1,8 @@
 "use client"
 
 import style from "@/components/header.module.css";
+import Image from "next/image";
+import darkLight from "@/assets/brilho-do-sol.png";
 
 export const Header = () => {
     return(
@@ -19,12 +21,15 @@ export const Header = () => {
                             <li>Contato</li>
                         </ul>
                     </nav>
-                    {/*
+
                     <div className={style.line}></div>
-                    <div className={style.header_options}>
-                        <p>DARK - LIGHT</p>
+                    <div className={style.options}>
+                        <div className={style.language}>ENG</div>
+                        <div className={style.switch}>
+                            <Image src={darkLight} alt="Brilho do sol"/>
+                        </div>
                     </div>
-                    */}
+
                 </div>
             </div>
         </header>

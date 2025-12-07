@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 50px;
+    padding: 30 px 50px;
     width: 100%;
 }
 .header_container{
@@ -22,6 +22,8 @@
     flex: 3;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 .nav ul{
     list-style: none;
@@ -31,15 +33,31 @@
 .nav ul li{
     text-transform: uppercase;
     font-weight: 500;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255,255,255, 0.7);
 }
 .line{
-    width: 10px;
-    background-color: #000;
-    height: auto;
+    width: 1px;
+    background-color: rgba(255,255,255,0.2);
+    height: 30px;
 }
-.header_options{
-    width: 150px;
-    height: auto;
-    background-color: red;
+.options{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.language{
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.switch{
+    background-color: #24272C;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.switch img{
+    width: 25px;
 }
