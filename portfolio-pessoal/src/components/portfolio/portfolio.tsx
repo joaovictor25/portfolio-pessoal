@@ -1,12 +1,13 @@
 import style from "@/components/portfolio/portfolio.module.css";
 import Image from "next/image";
 import Arrow from "../../assets/arrow.svg";
+
 export const Portfolio = () => {
     return(
         <section className={style.portfolio}>
             <header className={style.header}>
                 <div className={style.left}>
-                    <p>/ /  PORTFOLIO</p>
+                    <span className={style.subtitle}>/ /  PORTFOLIO</span>
                     <h2>Confira os projetos mais recentes que realizei</h2>
                 </div>
                 <div className={style.right}>

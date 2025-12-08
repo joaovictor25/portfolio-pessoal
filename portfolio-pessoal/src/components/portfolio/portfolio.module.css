@@ -8,8 +8,11 @@
 }
 .left{
 flex: 1;
+display: flex;
+flex-direction: column;
+gap: 15px;
 }
-.left p{
+.left .subtitle{
     color: #2563EB;
     font-size: 15px;
 }
@@ -25,9 +28,10 @@ flex: 1;
     justify-content: flex-end;
     flex: 1;
     color: #F2F2F2;
+    font-size: 18px;
 }
 .right p{
-    width: 60%;
+    width: 65%;
 }
 .container{
     display: flex;
