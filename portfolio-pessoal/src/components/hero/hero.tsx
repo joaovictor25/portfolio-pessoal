@@ -1,15 +1,30 @@
 "use client";
 
 import style from "./hero.module.css";
-import Hyperspeed from "./Hyperspeed";
-import { Button } from "@/components/button/button";
+import Hyperspeed from "./hyperspeed/Hyperspeed";
+
+import Orb from "./orb/Orb";
 
 export const Hero = () => {
     return(
         <>
-        <div className={style.degrade}></div>
+
+       {/* <div className={style.degrade}></div>*/}
         <section className={style.hero}>
-        <Hyperspeed
+            <div className={style.effect} style={{ width: '100%', height: '600px'}}>
+            <Orb
+                hoverIntensity={0.5}
+                rotateOnHover={true}
+                hue={0}
+                forceHoverState={true}
+            />
+            </div>
+
+            <div className={style.container}>
+                <p>Olá, sou João Victor</p>
+                <h1>Desenvolvedor  <div className={style.title_degrade}>Full Stack</div></h1>
+            </div>
+        {/*<Hyperspeed
         effectOptions={{
             onSpeedUp: () => { },
             onSlowDown: () => { },
@@ -52,8 +67,7 @@ export const Hero = () => {
             <div className={style.container}>
             <p>Olá, sou João Victor</p>
             <h1>Desenvolvedor  <div className={style.title_degrade}>Full Stack</div></h1>
-            <Button></Button>
-            </div>
+            </div>*/}
             
         </section>
 
