@@ -1,0 +1,40 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.container{
+    text-align: center;
+    z-index: 99;
+}
+.hero p{
+    color: #2563EB;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero h1{
+    line-height: 90px;
+    padding: 0;
+    margin: 0;
+    font-size: 80px;
+    font-weight: 700;
+}
+.title_degrade{
+    background: linear-gradient(90deg, #ffffff, #575757);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.degrade{
+    background-image: url("../../assets/banner-degrade.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 319px;
+    position: absolute;bottom:0;
+    z-index: 9999999!important;
+    width: 100%;
+}
