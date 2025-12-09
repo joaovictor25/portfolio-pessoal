@@ -7,7 +7,7 @@ export const Portfolio = () => {
         <section className={style.portfolio}>
             <header className={style.header}>
                 <div className={style.left}>
-                    <span className={style.subtitle}>/ /  PORTFOLIO</span>
+                    <span className={style.subtitle}>PORTFOLIO</span>
                     <h2>Confira os projetos mais recentes que realizei</h2>
                 </div>
                 <div className={style.right}>

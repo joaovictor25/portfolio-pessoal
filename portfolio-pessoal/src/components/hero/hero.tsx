@@ -4,6 +4,7 @@ import style from "./hero.module.css";
 import Hyperspeed from "./hyperspeed/Hyperspeed";
 
 import Orb from "./orb/Orb";
+import { Button } from "../button/button";
 
 export const Hero = () => {
     return(
@@ -23,6 +24,7 @@ export const Hero = () => {
             <div className={style.container}>
                 <p>Olá, sou João Victor</p>
                 <h1>Desenvolvedor  <div className={style.title_degrade}>Full Stack</div></h1>
+                <Button></Button>
             </div>
         {/*<Hyperspeed
         effectOptions={{

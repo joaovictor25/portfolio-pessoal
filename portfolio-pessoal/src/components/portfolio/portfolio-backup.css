@@ -1,0 +1,200 @@
+.portfolio{
+    width: 100%;
+    padding: 80px 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.left .subtitle{
+    color: #2563EB;
+    font-size: 15px;
+}
+.left h2{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    color: #fff;
+}
+.right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+    color: #F2F2F2;
+    font-size: 18px;
+}
+.right p{
+    width: 65%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.card{
+    border-radius: 40px;
+    height: auto;
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/*
+.card_img{
+    width: 100%;
+    height: 250px;
+    background-image: url("../../assets/projeto.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px 40px 0 0;
+}
+*/
+
+
+.card_img {
+  width: 100%;
+  height: 250px;
+  background-image: url("../../assets/projeto.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Corrigi a duplicidade de border-radius do seu código original */
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  /* Sombra suave para dar profundidade ao card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+}
+
+/* Opcional: Levantar levemente o card */
+
+
+/* CAMADA DO GLARE */
+.card_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Começa totalmente fora à esquerda */
+  width: 100%;
+  height: 100%;
+  
+  /* O segredo do profissionalismo: Overlay mistura o branco com as cores da foto */
+  mix-blend-mode: overlay; 
+
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.6) 50%, /* Pico de brilho mais forte */
+    rgba(255, 255, 255, 0.3) 60%,
+    transparent 80%
+  );
+
+  /* Transição otimizada */
+  transition: left 0.7s cubic-bezier(0.4, 0.0, 0.2, 1); /* Curva de aceleração mais natural */
+  pointer-events: none;
+}
+
+/* ATIVA O GLARE NO HOVER */
+.card_img:hover::before {
+  left: 100%; /* Atravessa para o outro lado */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card_down{
+    width: 100%;
+    height: 210px;
+    background-color: #202020;
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.content{
+    width: calc(100% - 60px);
+    height: calc(auto - 60px);
+    margin: 30px;
+    padding: 25px 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #202020;
+    position: absolute; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.content h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+.content p{
+    font-size: 16px;
+    color: #F2F2F2;
+    
+}
+.conainer_tag{
+    width: 100%;
+    display: flex;
+    gap:20px;
+}
+.tag {
+  /* Mantive suas propriedades base */
+  width: auto;
+  border-radius: 50px;
+  border: 1px solid #2563EB;
+  font-size: 12px;
+  padding: 5px 20px;
+  cursor: pointer; /* Importante para indicar clicável */
+  
+  /* Defini a cor do texto inicial para garantir o contraste na transição */
+  color: #2563EB; 
+  background-color: transparent;
+
+  /* MODERNO: Curva de animação mais fluida (não linear) */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tag:hover {
+  background-color: #2563EB;
+  color: #ffffff;
+  
+  /* O "Pulo do Gato" Moderno: */
+  
+  /* 1. Levanta levemente o elemento */
+  transform: translateY(-2px);
+  
+  /* 2. Cria um brilho (glow) da mesma cor do botão */
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+}
+.content button{
+    display: flex;
+    gap: 5px;
+    color: #2563EB;
+    font-weight: 600;
+}

@@ -11,7 +11,7 @@ export const Sobre = () => {
     return(
         <section className={style.sobre}>
             <div className={style.left}>
-                <span className={style.subtitle}>/ /  SOBRE MIM</span>
+                <span className={style.subtitle}>SOBRE MIM</span>
                 <h2>Mergulho de cabeça em desafios</h2>
                 <p>
                     Sou desenvolvedor WordPress com mais de 5 anos de experiência, especialmente com PHP e Banco de dados MySQL.<br/><br/>
@@ -37,10 +37,10 @@ Ao longo desses projetos, adquiri ainda mais proficiência em tecnologias como P
                 handle="João Victor"
                 status="Online"
                 contactText="Contato"
-                avatarUrl="http://joaovictor.online/wp-content/uploads/2025/12/Foto.png"
-                showUserInfo={true}
+                avatarUrl="https://joaovictor.online/wp-content/uploads/2025/12/Foto.png"
+                showUserInfo={false}
                 enableTilt={true}
-                enableMobileTilt={true}
+                enableMobileTilt={false}
                 onContactClick={() => console.log('Contact clicked')}
                 />
             </div>
