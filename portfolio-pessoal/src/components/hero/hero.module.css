@@ -1,3 +1,6 @@
+:root{
+  --shadow-color: rgba(0,0,0,0.35);
+}
 .hero{
     height: 100vh;
     width: 100%;
@@ -8,7 +11,7 @@
     
 }
 .effect{
-    position: absolute;top:70px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,24 +19,74 @@
 .container{
     text-align: center;
     z-index: 99;
+
 }
+/*
 .hero p{
     color: #2563EB;
     font-size: 18px;
     font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
 }
-.hero h1{
-    line-height: 90px;
-    padding: 0;
-    margin: 0;
-    font-size: 80px;
-    font-weight: 700;
+*/
+/* 1. Definimos a animação */
+/* 1. A Animação Original (Blur + Slide Up) */
+@keyframes blurSlideIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }
-.title_degrade{
-    background: linear-gradient(90deg, #ffffff, #575757);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+/* 2. O Badge de Vidro (Entra Primeiro) */
+.hero p {
+  /* Layout e Vidro */
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 50px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  /* Estado inicial invisível para a animação funcionar */
+  opacity: 0; 
+
+  /* Animação: Roda imediatamente */
+  animation: blurSlideIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
+
+/* 3. O Título H1 (Entra logo em seguida) */
+.hero h1 {
+  /* Estilos de Texto e Sombra */
+  color: #fff;
+  line-height: 90px;
+  padding: 0;
+  margin: 0;
+  font-size: 80px;
+  font-weight: 700;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /*text-shadow: 
+      0 1px 3px rgba(0, 0, 0, 0.5), 
+      0 5px 15px rgba(0, 0, 0, 0.2);
+      */
+
+  /* Estado inicial invisível */
+  opacity: 0; 
+
+  /* Animação: Roda com 0.2s de atraso (delay) */
+  /* Isso faz ele esperar o 'p' começar a aparecer antes de subir */
+  animation: blurSlideIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
+}
+
 .degrade{
     background-image: url("../../assets/banner-degrade.png");
     background-size: cover;
@@ -41,6 +94,6 @@
     background-position: center center;
     height: 319px;
     position: absolute;bottom:0;
-    z-index: 9999999!important;
+    z-index: 9;
     width: 100%;
 }

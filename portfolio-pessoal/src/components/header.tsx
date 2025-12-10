@@ -9,7 +9,8 @@ export const Header = () => {
         <header className={style.header}>
             <div className={style.header_container}>
                 <div className={style.logo}>
-                    <p>{"{ João Victor }"}</p>
+                    <div className={style.first}>João</div>
+                    <div className={style.second}>Victor</div>
                 </div>
                 <div className={style.container_nav}>
                     <nav className={style.nav}>

@@ -7,7 +7,9 @@ import Github from "../../assets/github.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
 
+
 export const Sobre = () => {
+
     return(
         <section className={style.sobre}>
             <div className={style.left}>
@@ -38,7 +40,7 @@ Ao longo desses projetos, adquiri ainda mais proficiência em tecnologias como P
                 status="Online"
                 contactText="Contato"
                 avatarUrl="https://joaovictor.online/wp-content/uploads/2025/12/Foto.png"
-                showUserInfo={false}
+                showUserInfo={true}
                 enableTilt={true}
                 enableMobileTilt={false}
                 onContactClick={() => console.log('Contact clicked')}

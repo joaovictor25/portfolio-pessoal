@@ -5,14 +5,16 @@ import Hyperspeed from "./hyperspeed/Hyperspeed";
 
 import Orb from "./orb/Orb";
 import { Button } from "../button/button";
+import FloatingLines from "./FloatingLines/FloatingLines";
+import LightPillar from "./LightPillar";
 
 export const Hero = () => {
     return(
         <>
 
-       {/* <div className={style.degrade}></div>*/}
+        <div className={style.degrade}></div>
         <section className={style.hero}>
-            <div className={style.effect} style={{ width: '100%', height: '600px'}}>
+            {/*<div className={style.effect} style={{ width: '100%', height: '600px'}}>
             <Orb
                 hoverIntensity={0.5}
                 rotateOnHover={true}
@@ -25,7 +27,10 @@ export const Hero = () => {
                 <p>Olá, sou João Victor</p>
                 <h1>Desenvolvedor  <div className={style.title_degrade}>Full Stack</div></h1>
                 <Button></Button>
-            </div>
+            </div>*/}
+
+
+
         {/*<Hyperspeed
         effectOptions={{
             onSpeedUp: () => { },
@@ -71,6 +76,51 @@ export const Hero = () => {
             <h1>Desenvolvedor  <div className={style.title_degrade}>Full Stack</div></h1>
             </div>*/}
             
+
+            {/*<div style={{ width: '100%', height: '100%', position: 'relative', display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <FloatingLines 
+                enabledWaves={['top', 'middle', 'bottom']}
+                // Array - specify line count per wave; Number - same count for all waves
+                lineCount={[10, 15, 20]}
+                // Array - specify line distance per wave; Number - same distance for all waves
+                lineDistance={[8, 6, 4]}
+                bendRadius={5.0}
+                bendStrength={-0.5}
+                interactive={true}
+                parallax={true}
+            />
+            <div className={style.container}>
+                <p>Olá, sou João Victor</p>
+                <h1>Desenvolvedor de <div className={style.title_degrade}>Software</div></h1>
+                <Button></Button>
+            </div>
+            
+            </div>*/}
+
+
+
+            <div style={{ width: '100%', height: '100%', position: 'relative', display:'flex', justifyContent:'center', alignItems:'center' }}>
+            <LightPillar
+                topColor="#2563EB"
+                bottomColor="#6AD0D3"
+                intensity={1.0}
+                rotationSpeed={0.3}
+                glowAmount={0.005}
+                pillarWidth={3.0}
+                pillarHeight={0.4}
+                noiseIntensity={0.5}
+                pillarRotation={25}
+                interactive={false}
+                mixBlendMode="normal"
+            />
+
+                <div className={style.container}>
+                    <p>Olá, sou João Victor</p>
+                    <h1>Desenvolvedor <div className={style.title_degrade}>de Software</div></h1>
+                    <Button></Button>
+                </div>
+            </div>
+
         </section>
 
          

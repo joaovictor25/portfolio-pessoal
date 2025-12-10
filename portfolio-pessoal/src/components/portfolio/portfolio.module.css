@@ -15,7 +15,7 @@
 .left .subtitle {
     color: #2563EB;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
@@ -31,10 +31,10 @@
 }
 .left h2 {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.1;
     color: #fff;
-    margin-bottom: 15px;
+
     background: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@
     color: #a3a3a3;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
+
 }
 .container{
     display: flex;
@@ -133,8 +133,8 @@
 }
 .content h3 {
     font-size: 24px;
-    font-weight: 800;
-    margin: 0;
+    font-weight: 600;
+    margin-bottom: -5px;
     color: #fff;
 }
 .content p {
@@ -151,22 +151,24 @@
 }
 .tag {
     border-radius: 50px;
-    border: 1px solid #2563EB;
+    border: 1px solid #121212;
+    background-color: #121212;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 6px 16px;
     cursor: pointer;
-    color: #2563EB;
-    background-color: transparent;
+    color: #fff;
+
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tag:hover {
-    background-color: #2563EB;
+    background-color: #121212;
+    border: 1px solid #ffffff;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 5px 15px rgba(213, 213, 213, 0.4);
 }
 .content button {
     background: none;
@@ -175,16 +177,10 @@
     align-items: center;
     gap: 8px;
     color: #2563EB;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    padding: 0;
-    margin-top: 5px;
+
+
     transition: color 0.3s ease;
-}
-.content button:hover {
-    color: #60a5fa;
-}
-.content button:hover::after {
-    transform: translateX(5px);
 }
