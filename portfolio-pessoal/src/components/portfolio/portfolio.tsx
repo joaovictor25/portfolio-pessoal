@@ -1,10 +1,10 @@
 import style from "@/components/portfolio/portfolio.module.css";
-import Image from "next/image";
-import Arrow from "../../assets/arrow.svg";
+import { Card } from "./card";
 
 export const Portfolio = () => {
     return(
         <section className={style.portfolio}>
+            <div className={style.container}>
             <header className={style.header}>
                 <div className={style.left}>
                     <span className={style.subtitle}>PORTFOLIO</span>
@@ -16,86 +16,8 @@ export const Portfolio = () => {
             </header>
 
             <div className={style.container}>
-                <div className={style.card}>
-                    <div className={style.card_img}>
-
-                    </div>
-                    <div className={style.card_down}>
-
-                    </div>
-                    <div className={style.content}>
-                        <h3>Desenvolvimento de site institucional</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <div className={style.conainer_tag}>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-
-                        </div>
-                        <button>Ver projeto<Image src={Arrow} alt="Seta do botão"/></button>
-                    </div>
-                </div>
-
-                <div className={style.card}>
-                    <div className={style.card_img}>
-
-                    </div>
-                    <div className={style.card_down}>
-
-                    </div>
-                    <div className={style.content}>
-                        <h3>Desenvolvimento de site institucional</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <div className={style.conainer_tag}>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-
-                        </div>
-                        <button>Ver projeto<Image src={Arrow} alt="Seta do botão"/></button>
-                    </div>
-                </div>
-
-                <div className={style.card}>
-                    <div className={style.card_img}>
-
-                    </div>
-                    <div className={style.card_down}>
-
-                    </div>
-                    <div className={style.content}>
-                        <h3>Desenvolvimento de site institucional</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <div className={style.conainer_tag}>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-
-                        </div>
-                        <button>Ver projeto<Image src={Arrow} alt="Seta do botão"/></button>
-                    </div>
-                </div>
-
-
-                <div className={style.card}>
-                    <div className={style.card_img}>
-
-                    </div>
-                    <div className={style.card_down}>
-
-                    </div>
-                    <div className={style.content}>
-                        <h3>Desenvolvimento de site institucional</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <div className={style.conainer_tag}>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-                            <div className={style.tag}>Wordpress</div>
-
-                        </div>
-                        <button>Ver projeto<Image src={Arrow} alt="Seta do botão"/></button>
-                    </div>
-                </div>
+                <Card></Card>
+            </div>
             </div>
         </section>
     );

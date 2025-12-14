@@ -1,0 +1,87 @@
+.footer{
+    background-color: #1a1a1a;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0 0;
+}
+.container_up{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container_up .title{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 80px;
+    line-height: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.container_up .email{
+width: 50%;
+}
+.container_up .number_whatsapp{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.container_down{
+    border-top: 1px solid #fff;
+    margin-top: 80px;
+    padding: 25px 0;
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social {
+    display: flex;
+    gap: 15px;
+}
+.social img{
+    width: 15px;
+    height: 15px;
+}
+.github, .linkedin, .whatsapp {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+.social > div:hover,
+.social > a:hover {
+    transform: translateY(-5px);
+    border-color: transparent;
+    color: white;
+}
+.github:hover {
+    background-color: #333;
+    box-shadow: 0 5px 15px rgba(51, 51, 51, 0.4);
+}
+.linkedin:hover {
+    background-color: #0077b5;
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+.whatsapp:hover {
+    background-color: #25D366;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}

@@ -1,0 +1,128 @@
+.servicos{
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.servicos_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.header{
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.left .subtitle {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #2563EB;
+    padding: 0 0 0 20px;
+}
+.left h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #fff;
+
+    background: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+    color: #F2F2F2;
+    font-size: 18px;
+}
+.right p{
+    width: 80%;
+    color: #a3a3a3;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.accordion_container{
+    width: 100%;
+}
+
+.accordion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #1a1a1a;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+
+.background::before {
+  opacity: 1;
+}
+
+
+.acordion_center{
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2563EB;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.accordion_title{
+    display: flex;
+    gap: 100px;
+
+}
+.number{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: auto;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.icon{
+    margin-left: auto;
+}
+.content {
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+  will-change: transform, opacity;
+}
+
+.open {
+
+  opacity: 1;
+    margin-bottom: 40px;
+}
+

@@ -31,6 +31,7 @@
 }
 
 .pc-card-wrapper {
+z-index: 9999999;
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
   position: relative;
@@ -58,8 +59,9 @@
 }
 
 .pc-card {
+  
   height: 80svh;
-  max-height: 540px;
+  max-height: 1000px;
   display: grid;
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);

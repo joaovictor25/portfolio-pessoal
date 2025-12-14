@@ -1,10 +1,25 @@
 .sobre{
     width: 100%;
-    padding: 80px 50px;
-    background-color: #1B1F24;
+    padding: 80px 0;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: column;
+}
+.container_sobre{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 100px;
+}
+.container_skill{
+
 }
 .left{
     width: 60%;
@@ -13,22 +28,16 @@
     flex-direction: column;
 }
 .left .subtitle {
-    color: #2563EB;
+    color: #fff;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.left .subtitle::before {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: #2563EB;
-    display: block;
-}
+    border-left: 4px solid #2563EB;
+    padding: 0 0 0 20px;
+  }
 .left p {
     color: #a3a3a3;
     font-size: 18px;
@@ -39,7 +48,7 @@
     font-size: 50px;
     font-weight: 600;
     line-height: 1.1;
-    color: #fff;
+    color: #e0e0e0;
     margin-bottom: 15px;
     background: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
     -webkit-background-clip: text;
@@ -87,5 +96,35 @@
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+.nome {
+    z-index: 9;
+    /* Tipografia e Estilo */
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: sans-serif; /* Garante uma fonte robusta */
+    white-space: nowrap; /* Impede que o texto quebre linhas */
+    letter-spacing: 2px; /* Espaçamento deixa mais elegante */
+
+    /* O Efeito "Outline" (Só a borda) */
+    color: transparent; /* Remove o preenchimento preto */
+    -webkit-text-stroke: 1px #ffffff; /* Cria a borda branca (ajuste a espessura aqui) */
+
+    /* Posicionamento na Esquerda */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente em relação ao pai */
+    left: 12%;  /* Cola na esquerda */
+    
+    /* Transformação e Rotação */
+    /* Atenção: Para o lado esquerdo, geralmente usa-se -90deg (leitura de baixo p/ cima).
+       Se quiser ler de cima para baixo, mude para 90deg.
+    */
+    transform: translate(-50%, -50%) rotate(-90deg); 
+    
+    /* Ajuste fino da âncora para garantir que fique "dentro" da div */
+    transform-origin: center;
 }

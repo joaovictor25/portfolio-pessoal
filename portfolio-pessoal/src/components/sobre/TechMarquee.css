@@ -1,0 +1,85 @@
+.marquee-wrapper {
+  background-color: transparent; /* Deixei transparente para se adaptar ao seu fundo */
+  padding: 80px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.marquee-title {
+  text-align: center;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  /* Máscara para suavizar as bordas laterais */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  padding: 5px 0;
+}
+
+/* Pausa ao passar o mouse */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Card Style */
+.skill-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px 40px; /* Levemente menor para ficar elegante em 2 linhas */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: max-content; /* Adapta ao tamanho do texto */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: #58a6ff;
+  background-color: #1f242c;
+}
+
+.skill-card .icon { font-size: 20px; display: flex; }
+.skill-card .name { color: #e6edf3; font-weight: 600; font-size: 14px; }
+
+/* --- ANIMAÇÕES --- */
+
+/* Classe para mover para a ESQUERDA */
+.scroll-left {
+  animation: scrollLeft 40s linear infinite;
+}
+
+/* Classe para mover para a DIREITA */
+.scroll-right {
+  animation: scrollRight 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
