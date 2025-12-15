@@ -43,7 +43,7 @@ export const Sobre = () => {
                         handle="João Victor"
                         status="Online"
                         contactText="Contato"
-                        avatarUrl="https://joaovictor.online/wp-content/uploads/2025/12/Foto.png"
+                        avatarUrl="https://joaovictor.online/foto.png"
                         showUserInfo={false}
                         enableTilt={true}
                         enableMobileTilt={false}
