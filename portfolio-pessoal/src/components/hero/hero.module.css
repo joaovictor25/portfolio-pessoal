@@ -41,9 +41,7 @@
   }
 }
 
-/* 2. O Badge de Vidro (Entra Primeiro) */
 .hero p {
-  /* Layout e Vidro */
   display: inline-block;
   padding: 8px 14px;
   border-radius: 50px;
@@ -53,17 +51,11 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
-  /* Estado inicial invisível para a animação funcionar */
   opacity: 0; 
-
-  /* Animação: Roda imediatamente */
   animation: blurSlideIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-/* 3. O Título H1 (Entra logo em seguida) */
 .hero h1 {
-  /* Estilos de Texto e Sombra */
   color: #fff;
   line-height: 90px;
   padding: 0;
@@ -71,16 +63,7 @@
   font-size: 80px;
   font-weight: 700;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  /*text-shadow: 
-      0 1px 3px rgba(0, 0, 0, 0.5), 
-      0 5px 15px rgba(0, 0, 0, 0.2);
-      */
-
-  /* Estado inicial invisível */
   opacity: 0; 
-
-  /* Animação: Roda com 0.2s de atraso (delay) */
-  /* Isso faz ele esperar o 'p' começar a aparecer antes de subir */
   animation: blurSlideIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
 }
 

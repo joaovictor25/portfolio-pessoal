@@ -103,30 +103,18 @@
 }
 .nome {
     z-index: 9;
-    /* Tipografia e Estilo */
     text-transform: uppercase;
     font-size: 60px;
     font-weight: 900;
-    font-family: sans-serif; /* Garante uma fonte robusta */
-    white-space: nowrap; /* Impede que o texto quebre linhas */
-    letter-spacing: 2px; /* Espaçamento deixa mais elegante */
-
-    /* O Efeito "Outline" (Só a borda) */
-    color: transparent; /* Remove o preenchimento preto */
-    -webkit-text-stroke: 1px #ffffff; /* Cria a borda branca (ajuste a espessura aqui) */
-
-    /* Posicionamento na Esquerda */
+    font-family: sans-serif; 
+    white-space: nowrap; 
+    letter-spacing: 2px;
+    color: transparent; 
+    -webkit-text-stroke: 1px #ffffff;
     position: absolute;
-    top: 50%; /* Centraliza verticalmente em relação ao pai */
-    left: 12%;  /* Cola na esquerda */
-    
-    /* Transformação e Rotação */
-    /* Atenção: Para o lado esquerdo, geralmente usa-se -90deg (leitura de baixo p/ cima).
-       Se quiser ler de cima para baixo, mude para 90deg.
-    */
+    top: 50%; 
+    left: 15%;  
     transform: translate(-50%, -50%) rotate(-90deg); 
-    
-    /* Ajuste fino da âncora para garantir que fique "dentro" da div */
     transform-origin: center;
 }
 
@@ -152,7 +140,7 @@
     .nome {
         font-size: 40px;
          position: absolute;
-        top: 50%; /* Centraliza verticalmente em relação ao pai */
-        left: 3%;  /* Cola na esquerda */
+        top: 50%; 
+        left: 3%;  
     }
 }
