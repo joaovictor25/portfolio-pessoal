@@ -11,7 +11,7 @@ import TechMarquee from './TechMarquee';
 export const Sobre = () => {
 
     return(
-        <section className={style.sobre}>
+        <section id="sobre" className={style.sobre}>
             <div className={style.container}>
                 <div className={style.container_sobre}>
                     <div className={style.left}>
@@ -25,15 +25,21 @@ export const Sobre = () => {
                             Sempre precisando me adaptar, aprendi a trabalhar de forma colaborativa, resolver problemas com eficiência e me comunicar de maneira clara.
                         </p>
                         <div className={style.social}>
+                            <a href="https://github.com/joaovictor25" target="_blank">
                             <div className={style.github}>
                                 <Image src={Github} alt="Icone do github"></Image>
                             </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joao-victor2512/" target="_blank">
                             <div className={style.linkedin}>
                                 <Image src={Linkedin} alt="Icone do Linkedin"></Image>
                             </div>
+                            </a>
+                            <a href="https://wa.me/5521967862926" target="_blank">
                             <div className={style.whatsapp}>
                                 <Image src={Whatsapp} alt="Iconde do whatsapp"></Image>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div className={style.right}>
@@ -46,7 +52,7 @@ export const Sobre = () => {
                         avatarUrl="https://joaovictor.online/foto.png"
                         showUserInfo={false}
                         enableTilt={true}
-                        enableMobileTilt={false}
+                        enableMobileTilt={true}
                         onContactClick={() => console.log('Contact clicked')}
                         />
                         <div className={style.nome}>João Victor</div>

@@ -10,7 +10,7 @@ export const Hero = () => {
     return(
         <>
         <div className={style.degrade}></div>
-        <section className={style.hero}>
+        <section id="home" className={style.hero}>
             <div style={{ width: '100%', height: '100vh', position: 'relative', display:'flex', justifyContent:'center', alignItems:'center' }}>
 
 <Squares 

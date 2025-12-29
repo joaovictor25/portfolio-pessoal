@@ -9,6 +9,7 @@
 .container{
     width: 100%;
     max-width: 1350px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -127,4 +128,31 @@
     
     /* Ajuste fino da âncora para garantir que fique "dentro" da div */
     transform-origin: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media (max-width: 767px) {
+    .container_sobre{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        align-items: center;
+    }
+    .nome {
+        font-size: 40px;
+         position: absolute;
+        top: 50%; /* Centraliza verticalmente em relação ao pai */
+        left: 3%;  /* Cola na esquerda */
+    }
 }

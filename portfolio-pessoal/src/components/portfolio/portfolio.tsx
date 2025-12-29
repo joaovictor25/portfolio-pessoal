@@ -3,19 +3,19 @@ import { Card } from "./card";
 
 export const Portfolio = () => {
     return(
-        <section className={style.portfolio}>
+        <section id="portfolio" className={style.portfolio}>
             <div className={style.container}>
             <header className={style.header}>
                 <div className={style.left}>
-                    <span className={style.subtitle}>PORTFOLIO</span>
-                    <h2>Confira os projetos mais recentes que realizei</h2>
+                    <span className={style.subtitle}>PORTFÓLIO</span>
+                    <h2>Confira os projetos que realizei recentemente</h2>
                 </div>
                 <div className={style.right}>
-                    <p>Uma seleção de produtos digitais que desenvolvi para equipes de SaaS, FinTech e startups</p>
+                    <p>Projetos criados para impulsionar empresas de SaaS, FinTechs e startups, resolvendo problemas reais e acelerando resultados.</p>
                 </div>
             </header>
 
-            <div className={style.container}>
+            <div className={style.container_card}>
                 <Card></Card>
             </div>
             </div>

@@ -8,7 +8,7 @@ export const Card = () => {
         {dataPortfolio.map(card => (
             <div className={style.card} key={card.id}>
                 <div className={style.card_img}>
-
+                    <Image src={card.imagem} alt="Combofilms"></Image>                    
                 </div>
                 <div className={style.card_down}>
                     

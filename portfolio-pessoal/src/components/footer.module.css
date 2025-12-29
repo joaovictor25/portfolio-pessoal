@@ -1,11 +1,10 @@
 .footer{
     background-color: #1a1a1a;
     width: 100%;
-
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 80px 0 0 0;
+    padding: 80px 20px 0 20px;
 }
 .container_up{
     width: 100%;
@@ -28,11 +27,17 @@
 }
 .container_up .email{
 width: 50%;
+gap: 10px;
+display: flex;
+}
+.container_up .email img{
+  width: 23px;
 }
 .container_up .number_whatsapp{
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
 }
 .container_down{
     border-top: 1px solid #fff;
@@ -43,6 +48,7 @@ width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .social {
     display: flex;
@@ -84,4 +90,31 @@ width: 50%;
 .whatsapp:hover {
     background-color: #25D366;
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media (max-width: 767px) {
+  .title p{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .container_up{
+    flex-direction: column;
+    }
+    .container_up .email{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container_up .number_whatsapp{
+    width: 100%;
+    justify-content: center;
+  }
+  .social{
+    width: 100%;
+  }
+  .nome{
+    margin-top: 10px;
+  }
 }
