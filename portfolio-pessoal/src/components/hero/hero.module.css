@@ -72,8 +72,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 319px;
-    position: absolute;bottom:0;
+    position: relative;top:-80px;
+    height: 100px;
     z-index: 9;
     width: 100%;
 }

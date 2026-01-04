@@ -81,6 +81,9 @@ export const Header = () => {
                       <li className={activeSection === "servicos" ? style.active : ""}>
                         <a href="#servicos">Serviços</a>
                       </li>
+                      <li className={activeSection === "servicos" ? style.active : ""}>
+                        <a href="https://basetecnologica.com.br/" target="_blank">Base de dados</a>
+                      </li>
                       <li className={activeSection === "contato" ? style.active : ""}>
                         <a href="#contato">Contato</a>
                       </li>
