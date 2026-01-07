@@ -37,8 +37,8 @@ Este portfólio é disponibilizado exclusivamente para fins de visualização e 
 ❌ O uso comercial, total ou parcial, deste projeto.
 
 #### É permitido apenas:
-✅ Visualizar o código para fins de estudo e referência.
-✅ Avaliar a estrutura e as tecnologias utilizadas.
+✅ Visualizar o código para fins de estudo e referência.<br>
+✅ Avaliar a estrutura e as tecnologias utilizadas.<br>
 ✅ Utilizar para exibição de projetos, desde que sejam mantidos no rodapé do site os créditos de desenvolvimento e design, devidamente atribuídos à minha pessoa.
 
 Todo o conteúdo deste repositório (código, layout e design) é protegido por direitos autorais. 
