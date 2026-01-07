@@ -9,12 +9,12 @@ O portfólio reúne aplicações práticas, experimentos e soluções que reflet
 Siga os passos abaixo para rodar o projeto localmente:
 #### Clone do repositório
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/joaovictor25/portfolio-pessoal.git
 
 ```
 #### Acessar diretorio do projeto
 ```bash
-cd repositorio-do-projeto
+cd portfolio-pessoal
 ```
 #### Instalar as dependências
 ```bash
