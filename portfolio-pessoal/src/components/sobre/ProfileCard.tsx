@@ -41,9 +41,9 @@ const adjust = (v: number, fMin: number, fMax: number, tMin: number, tMax: numbe
   round(tMin + ((tMax - tMin) * (v - fMin)) / (fMax - fMin));
 
 const ProfileCardComponent: React.FC<ProfileCardProps> = ({
-  avatarUrl = 'https://joaovictor.online/imagens-geral/foto.png',
-  iconUrl = 'https://joaovictor.online/imagens-geral/iconpattern.png',
-  grainUrl = 'https://joaovictor.online/imagens-geral/grain.webp',
+  avatarUrl = 'https://lp.joaovictor.online/imagens-geral/foto.png',
+  iconUrl = 'https://lp.joaovictor.online/imagens-geral/iconpattern.png',
+  grainUrl = 'https://lp.joaovictor.online/imagens-geral/grain.webp',
   innerGradient,
   behindGlowEnabled = true,
   behindGlowColor,
